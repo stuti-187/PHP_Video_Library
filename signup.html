@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<link rel="stylesheet" type="text/css" href="style.css">
+ <html> 
+<head>
+ <title>Vidcafe|Sign-Up</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Jquery CSS -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
+<!-- font-awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!-- Jquery -->
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+ 
+ <!-- Jquery UI -->
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+ </head> 
+<body>
+<script>
+function validateForm() {
+    var x = document.forms["MyForm"]["name"].value;
+    if (x == null || x == "") {
+        alert("Please Complete the Form");
+        return false;
+    }
+}
+function puser()
+{
+
+}
+</script >
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://localhost/project/unsigneduphome.html"><button type="button" class="btn btn-primary btn-lg active"><i class="fa fa-home"></i>HOME</button></a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+<i class="fa fa-search"></i>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+<li><a href="http://localhost/project/aboutus.html"><button type="button" class="btn btn-primary">ABOUT US</button></a></li>
+
+
+<li><a href="http://localhost/project/contactus.html"><button type="button" class="btn btn-success"><i class="fa fa-phone"></i> CONTACT US</button></a></li>
+<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><button type="button" class="btn btn-warning"><i class="fa fa-sign-in"></i> SIGN IN</button> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://localhost/project/login.html"><button type="button" class="btn btn-info"><i class="fa fa-sign-in"></i> USER</button></a></li>
+ <li><a href="http://localhost/project/Employee.html"><button type="button" class="btn btn-info"><i class="fa fa-sign-in"></i> EMPLOYEE</button></a></li>  </ul>
+
+            
+            <li role="separator" class="divider"></li>
+        </li>
+
+
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><button type="button" class="btn btn-warning"><i class="fa fa-language"></i> LANGUAGE</button> </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">English</a></li>
+
+            
+            <li role="separator" class="divider"></li>
+          
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<h1>
+<!--<a class="btn btn-lg btn-success" href="#">-->
+ <i class="fa fa-caret-square-o-right fa-2x center-left"></i><br><font face="Jokerman" color="black"> VIDCAFE</font><i class="fa fa-cog fa-spin"></i></h1>
+  
+<i class="fa fa-quote-left fa-1x fa-pull-left fa-border"></i>
+<strong>THE HUB OF VIDEOS..</strong>
+<i class="fa fa-quote-right fa-1x fa-pull-center fa-border"></i>
+<!--<div class="sidebarr">
+<i class="fa fa-music fa-fw fa-2x"></i><strong style="font-size:200%">MUSIC</strong>
+</div>-->
+<div id="Sign-Up">
+ <fieldset style="width:40%">
+<legend><button type="button" class="btn btn-success btn-lg"><center>Join Vidcafe Today</center></button>
+</legend>
+ <table border="0"> 
+<form method="POST" action="data.php" name="MyForm" onsubmit="return validateForm()">
+ <div class="input-group margin-bottom-sm">
+  <span class="input-group-addon"><i class="fa fa-user-plus fa-fw"></i></span>
+  <input class="form-control" type="text" name="name" placeholder="NAME">
+</div> 
+<div class="input-group margin-bottom-sm">
+  <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+  <input class="form-control" type="text" name="email" placeholder="EMAIL ADDRESS">
+</div>
+<div class="input-group">
+  <span class="input-group-addon"><i class="fa fa-phone fa-fw"></i></span>
+  <input class="form-control" type="text" name="phone" placeholder="PHONE NUMBER">
+</div>
+<div class="input-group margin-bottom-sm">
+  <span class="input-group-addon"><i class="fa fa-birthday-cake fa-fw"></i></span>
+  <input class="form-control" type="date" name="DOB" placeholder="DATE OF BIRTH">
+</div>
+<!--<div class="btn-group open">
+  <a class="btn btn-primary" href="#"><i class="fa fa-user fa-fw"></i> CHOOSE TYPE</a>
+  <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+    <span class="fa fa-caret-down"></span></a>
+  <ul class="dropdown-menu">-->
+  <select name="utype">
+    <option value="NON-PREMIUM"><!--<a href="http://localhost/project/psignup.html"><i class="fa fa-cog fa-fw"></i> -->NON-PREMIUM</option>
+    <option value="PREMIUM"><!--<a href="http://localhost/project/bsignup.html"><i class="fa fa-cog fa-fw"></i> -->PREMIUM</option>
+	</select>
+  <!--</ul>
+</div>
+<!--<div><span class="input-group-addon"><p class="text-left"><i class="fa fa-user"></i><strong>USER NAME</strong></p></span></div>-->
+<div class="input-group margin-bottom-sm">
+  <span class="input-group-addon"><i class="fa fa-crosshairs fa-fw"></i></span>
+  <input class="form-control" type="text" name="userid" placeholder="USER NAME">
+</div>
+<div class="input-group margin-bottom-sm">
+  <span class="input-group-addon"><i class="fa fa-star fa-fw"></i></span>
+  <input class="form-control" type="password" name="pass" placeholder="PASSWORD">
+</div> 
+<div class="input-group margin-bottom-sm">
+  <span class="input-group-addon"><i class="fa fa-star-o fa-fw"></i></span>
+  <input class="form-control" type="password" name="cpass" placeholder="CONFIRM PASSWORD">
+</div>
+ <tr>
+ <td><center><input id="button" type="submit" name="submit" value="Sign-Up"></center></td>
+ </tr>
+ </form>
+ </table>
+ </fieldset>
+ </div>
+
+  </nav><nav class="navbar navbar-left navbar-fixed-bottom">
+  <div class="container">
+ 
+ <a href="" class="btn btn-danger btn-lg active  btn-lg " role="button"><i class="fa fa-music"></i><strong> MUSIC MANIA</strong></a>
+ <a href="" class="btn btn-primary btn-lg active  btn-lg " role="button"><i class="fa fa-forward"></i><strong> WEBSERIES</strong></a>
+ <a href="" class="btn btn-danger btn-lg active  btn-lg " role="button"><i class="fa fa-newspaper-o"></i><strong> NEWS.TV</strong></a>
+ <a href="" class="btn btn-primary btn-lg active  btn-lg " role="button"><i class="fa fa-youtube-play"></i><strong> VIDDLER</strong></a>
+  <a href="https://twitter.com/?lang=en" class="btn btn-danger btn-lg active  btn-lg " role="button"><i class="fa fa-twitter fa-1x"></i><strong> TWITTER</strong></a>
+    <a href="https://www.facebook.com/" class="btn btn-primary btn-lg active  btn-lg " role="button"><i class="fa fa-facebook-official"></i><strong> FACEBOOK</strong></a>
+ 
+</body>
+ </html>
